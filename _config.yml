@@ -24,7 +24,7 @@ github_username:  heman206
 disqus:
   shortname: heman206s-jekyll-site
   
-   timezone: America/California
+   timezone: America/Los Angeles
 
 # Build settings
 markdown: kramdown
