@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+
+<script type="text/javascript">
+		var hour_of_the_day = Number(prompt("Which hour of the day is it? Enter 1 for 1pm, 2 for 2pm, 3 for pm, etc.", "1"));
+		
+		// Ask the user what day it is. Convert the string to a number.
+		
+		switch(hour_of_the_day) {
+				case 1:
+						alert("The restaurant is open between 11am and 2pm.");
+						break;
+				case 2:
+				case 3:
+				case 4:
+				case 5:
+						alert("You can order room service or visit the restaurant between 5pm and 9pm.");
+						break;
+				case 6:
+						alert("You can find a continental breakfast served in the lobby between 6am and 10am.");
+						break;
+				case 7:
+						alert("You'll have to wait or go out for a snack if it is any other hour of the day.");
+						break;
+				default:
+						alert("Please try again. Enter 1 for 1pm, 2 for 2pm, 3 for 3pm, etc.");
+						break;
+		}
+</script>
+</body>
+</html>

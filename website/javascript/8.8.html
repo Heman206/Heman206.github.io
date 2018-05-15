@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<script type="text/javascript">
+	function tipCalc(bill, tipPercentage) {
+		return bill * tipPercentage
+	}
+	
+	// ask the user how much the bill was
+	
+	var bill= (prompt("How much is the bill?"));
+	
+	// ask the user how much they wish to tip (.1 = 10%)
+	
+	var tipPercentage= (prompt("How much do you wish to tip? Write it in decimal form. Ex:10% = 0.1"));
+	
+	// run the function inside a document.write or an alert
+	
+	//alert(bill * tipPercentage);
+	document.write(bill * tipPercentage);
+
+</script>
+</body>
+</html>

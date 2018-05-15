@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<script type="text/javascript">
+        function computeBMI()
+        {
+            //Obtain user inputs
+            var height=Number(document.getElementById("height").value);
+            var weight=Number(document.getElementById("weight").value);
+			var feet = Math.floor(height/12);
+			var inches = (height%12);
+
+            //Convert all units to metric
+            var height_m=height/39.3700787;
+            var weight_m= weight/2.20462;
+
+            //Perform calculation
+            var BMI=weight_m/Math.pow(height_m,2);
+
+            //Display result of calculation
+            document.getElementById("heightOutput").innerHTML=  feet + "'" + inches + '"';
+            document.getElementById("weightOutput").innerHTML=weight;
+            document.getElementById("output").innerHTML=Math.round(BMI*100)/100;
+        }
+    </script>
+</head>
+
+<body>
+ <h1>Body Mass Index Calculator</h1>
+    <p>Enter your height in inches: <input type="text" id="height"/>
+        
+    </p>
+<p>Enter your weight in pounds: <input type="text" id="weight"/>
+    </p>
+    <input type="submit" value="computeBMI" onclick="computeBMI();">
+	<p>Height:<span id="heightOutput">?</span></p>
+	<p>Weight:<span id="weightOutput">?</span></p>
+	<p>BMI: <span id="output">?</span></p>
+</body>
+</html>
