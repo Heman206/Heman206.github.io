@@ -1,6 +1,7 @@
+---
 layout: post
-title:  "Why Janna Hates Gian!"
-date:   2018-05-17 10:27:20 -0700
+title: "Why Janna Hates Gian!"
+date: 2018-05-17 10:27:20 -0700
 categories: uncategorized
 author: FazeAdapt
 ---
